@@ -79,15 +79,15 @@ def main():
     percentage = max(0, min(100, percentage))
 
     def reduce():
-        if percentage < 50:
+        if percentage < 50 :
             print("\nYour focus level is low.")
 
             if work < 15:
                 print("- Fix your sleep schedule. Around 8 hours of sleep is recommended.")
             elif study < 5:
                 print("- Increase your study time.")
-            else:
-                print("- Reduce your mobile screen time.")
+                if screen >5:
+                    print("- Reduce your mobile screen time.")
         else:
             print("\nYour focus level is good. Keep it up!")
 
